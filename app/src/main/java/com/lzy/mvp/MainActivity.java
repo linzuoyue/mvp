@@ -8,7 +8,6 @@ import com.lzy.mvp.contract.ContractC;
 import com.lzy.mvp.presenter.PresenterA;
 import com.lzy.mvp.presenter.PresenterB;
 import com.lzy.mvp.presenter.PresenterC;
-import com.lzy.mvp.test.ViewPath;
 
 import android.util.Log;
 

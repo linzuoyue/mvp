@@ -6,7 +6,6 @@ import com.lzy.component.contract.ContractA;
 import com.lzy.component.contract.ContractC;
 import com.lzy.component.presenter.PresenterA;
 import com.lzy.component.presenter.PresenterC;
-import com.lzy.mvp.test.ViewPath;
 
 import javax.inject.Inject;
 
