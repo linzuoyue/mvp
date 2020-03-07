@@ -1,6 +1,8 @@
 package com.lzy.mvp;
 
 import com.lzy.apt_annotation.AutoAttach;
+import com.lzy.apt_annotation.TestMethod;
+import com.lzy.apt_annotation.TestMethod2;
 import com.lzy.base.BaseActivityMVP;
 import com.lzy.mvp.contract.ContractA;
 import com.lzy.mvp.contract.ContractB;

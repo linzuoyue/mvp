@@ -1,2 +1,2 @@
-include ':app', ':apt_processor', ':apt_annotation', ':base', ':component'
+include ':app', ':apt_processor', ':apt_annotation', ':base', ':component', ':buildSrc'
 rootProject.name='MVP'
