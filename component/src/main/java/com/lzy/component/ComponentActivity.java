@@ -1,6 +1,7 @@
 package com.lzy.component;
 
 import com.lzy.apt_annotation.AutoAttach;
+import com.lzy.apt_annotation.TestMethod2;
 import com.lzy.base.BaseActivityMVP;
 import com.lzy.component.contract.ContractA;
 import com.lzy.component.contract.ContractC;
@@ -28,10 +29,18 @@ public class ComponentActivity extends BaseActivityMVP implements ContractA.View
     }
 
     @Override
+    protected void bindData() {
+        super.bindData();
+        presenterA.getA();
+        presenterC.getC();
+    }
+
+    @Override
     public void showA() {
     }
 
     @Override
+    @TestMethod2
     public void showC() {
 
     }

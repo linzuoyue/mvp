@@ -3,7 +3,9 @@ package com.lzy.buildsrc;
 
 import org.objectweb.asm.AnnotationVisitor;
 import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Type;
 import org.objectweb.asm.commons.AdviceAdapter;
+import org.objectweb.asm.commons.Method;
 
 /**
  * TODO <br/>
@@ -33,5 +35,8 @@ public class ASMMethodVisitor extends AdviceAdapter {
         if (!hasAnnotation) {
             return;
         }
+        getStatic(Type.getType("Ljava/lang/System "), "out", Type.getType("Ljava/io/PrintStream;"));
+        visitLdcInsn("1234");
+        invokeVirtual(Type.getType("Ljava/io/PrintStream "), new Method("println", "(Ljava/lang/String;)V"));
     }
 }

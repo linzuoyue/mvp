@@ -1,4 +1,6 @@
+import com.lzy.buildsrc.ASMLibraryPlugin
 apply plugin: 'com.android.library'
+apply plugin: ASMLibraryPlugin
 
 android {
     compileSdkVersion 29

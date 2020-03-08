@@ -29,6 +29,12 @@ import java.util.Set;
  */
 public class ASMTransform extends Transform {
 
+    private Set<? super QualifiedContent.Scope> mScopeSet;
+
+    protected ASMTransform(Set<? super QualifiedContent.Scope> scopeSet) {
+        mScopeSet = scopeSet;
+    }
+
     @Override
     public String getName() {
         return "ASMTransform";
@@ -41,7 +47,7 @@ public class ASMTransform extends Transform {
 
     @Override
     public Set<? super QualifiedContent.Scope> getScopes() {
-        return TransformManager.SCOPE_FULL_PROJECT;
+        return mScopeSet;
     }
 
     @Override

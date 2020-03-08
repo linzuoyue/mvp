@@ -1,7 +1,7 @@
-import com.lzy.buildsrc.ASMPlugin
+import com.lzy.buildsrc.ASMApplicationPlugin
 
 apply plugin: 'com.android.application'
-apply plugin: ASMPlugin
+apply plugin: ASMApplicationPlugin
 
 android {
     compileSdkVersion 29
